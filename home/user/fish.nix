@@ -16,7 +16,12 @@
     };
 
     shellInit = "
+    # init zoxide
     zoxide init fish | source
+
+    # setup ssh-key for github
+    eval $(ssh-agent -c)
+    ssh-add ~/.ssh/id_ed25519
     ";
   };
 
