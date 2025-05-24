@@ -14,6 +14,9 @@ theme = "amberwood"
   display-inlay-hints = true
 
 [editor.statusline]
-left = ["mode", "spinner", "file-type", "total-line-numbers", "file-encoding"]
-center = ["file-type"]
-right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
+  left = ["mode", "spinner", "file-type", "file-encoding"]
+  center = ["file-name", "spacer", "version-control"]
+  right = ["position", "position-percentage", "total-line-numbers", "spacer", "diagnostics", "workspace-diagnostics"]
+
+[editor]
+  bufferline = "always"
