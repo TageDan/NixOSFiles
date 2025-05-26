@@ -46,6 +46,9 @@
     swappy
     slurp
 
+    # gui
+    gimp 
+
     # school
     teams-for-linux
 
