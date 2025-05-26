@@ -21,14 +21,18 @@
     du-dust
     hyperfine
     bacon
-    ncspot
+    spotify-player
     fselect # this is nice have always struggled with find and stuff
+    htop
 
     # development
     cargo
     rustc
 
     python3
+
+    gcc
+    gnumake
 
 
     # tui programs
@@ -41,6 +45,9 @@
     grim
     swappy
     slurp
+
+    # school
+    teams-for-linux
 
 
     
