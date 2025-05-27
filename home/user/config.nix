@@ -5,5 +5,6 @@ in {
     ".config/helix".source = "${configDir}/helix";
     ".config/alacritty".source = "${configDir}/alacritty";
     ".config/waybar".source = "${configDir}/waybar";
+    ".config/rofi".source = "${configDir}/rofi";
   };
 }

@@ -11,6 +11,8 @@
 
     # cli-tools
     tree
+    ffmpeg
+    htop
 
     # cool cli-tools (mostly rust stuff) 
     zoxide 
@@ -23,7 +25,6 @@
     bacon
     spotify-player
     fselect # this is nice have always struggled with find and stuff
-    htop
 
     # development
     cargo
@@ -33,7 +34,6 @@
 
     gcc
     gnumake
-
 
     # tui programs
     gitui
@@ -48,6 +48,7 @@
 
     # gui
     gimp 
+    vlc
 
     # school
     teams-for-linux

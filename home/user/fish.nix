@@ -13,6 +13,8 @@
       "ll" = "eza -l";
       "la" = "eza -a";
       "lla" = "eza -la";
+
+      "cat" = "bat";
     };
 
     shellInit = "
