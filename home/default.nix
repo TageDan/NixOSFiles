@@ -49,7 +49,8 @@
     # gui
     gimp 
     vlc
-
+    simple64
+    
     # school
     teams-for-linux
 

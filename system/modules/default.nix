@@ -7,5 +7,6 @@
     ./fish.nix
     ./fonts.nix
     ./gaming
+    ./bluetooth.nix
   ];
 }
