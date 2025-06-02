@@ -27,11 +27,21 @@
     fselect # this is nice have always struggled with find and stuff
 
     # development
+    # rust
     cargo
     rustc
 
+    # latex
+    texlab
+    tectonic
+
+    # pdf
+    zathura
+
+    # python
     python3
 
+    # c/c++
     gcc
     gnumake
 
