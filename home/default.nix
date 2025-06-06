@@ -29,7 +29,10 @@
     # development
     # rust
     cargo
+    clippy
     rustc
+    rustfmt
+    rust-analyzer
 
     # latex
     texlab
