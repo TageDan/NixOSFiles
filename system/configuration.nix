@@ -51,7 +51,7 @@
   services.xserver.enable = true;
 
   # setup xserver with wayland
-  services.displayManager.gdm = {
+  services.xserver.displayManager.gdm = {
     enable = true;
     wayland = true;
   };

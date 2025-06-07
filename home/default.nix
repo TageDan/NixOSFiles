@@ -62,7 +62,7 @@
     # gui
     gimp 
     vlc
-    simple64
+    rmg-wayland
     
     # school
     teams-for-linux

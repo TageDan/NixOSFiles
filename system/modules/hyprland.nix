@@ -13,6 +13,11 @@
     brightnessctl
     waybar
     rofi
+
+    # applets
+    networkmanagerapplet
+    blueman
+
     
   ];
 }
