@@ -21,7 +21,7 @@
       "z"
       "eza"
     ];
-    theme = "robbyrussell";
+    theme = "macovsky";
     
   };
   };
