@@ -3,7 +3,7 @@
     ./git.nix
     ./firefox.nix
     ./config.nix
-    ./fish.nix
+    ./zsh.nix
   ];
 
   nixpkgs = {

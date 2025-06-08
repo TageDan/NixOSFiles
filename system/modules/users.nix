@@ -4,7 +4,7 @@
   users.users.tage = {
     isNormalUser = true;
     description = "tage";
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" "audio" "dialout" ]; # Dialout for usb reading
   };
 }

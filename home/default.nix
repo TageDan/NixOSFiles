@@ -14,11 +14,12 @@
     ffmpeg
     htop
 
-    # cool cli-tools (mostly rust stuff) 
+    # cool cli-tools (mostly rust stuff, actually only rust stuff i think) 
     zoxide 
     ripgrep
     presenterm # this is soooo cool
     tokei
+    eza
     bat
     du-dust
     hyperfine

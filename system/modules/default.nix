@@ -4,7 +4,7 @@
     ./hyprland.nix
     ./users.nix
     ./helix.nix
-    ./fish.nix
+    ./zsh.nix
     ./fonts.nix
     ./gaming
     ./bluetooth.nix
