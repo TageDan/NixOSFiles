@@ -20,6 +20,7 @@
       "git"         
       "z"
       "eza"
+      "ssh-agent"
     ];
     theme = "macovsky";
     
