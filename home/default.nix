@@ -64,6 +64,7 @@
     gimp 
     vlc
     rmg-wayland
+    libresprite
     
     # school
     teams-for-linux
