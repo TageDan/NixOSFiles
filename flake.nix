@@ -11,6 +11,13 @@
 
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
@@ -32,6 +39,7 @@
 
           home-manager.backupFileExtension = "hm-backup";
 
+          home-manager.extraSpecialArgs = {inherit inputs;};
           
           home-manager.users.tage = import ./home;
 
