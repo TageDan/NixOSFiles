@@ -13,6 +13,7 @@
     brightnessctl
     waybar
     rofi
+    wl-clipboard
 
     # applets
     networkmanagerapplet

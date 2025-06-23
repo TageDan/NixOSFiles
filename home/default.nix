@@ -63,14 +63,11 @@
     # gui
     gimp 
     vlc
-    rmg-wayland
     libresprite
-    
-    # school
-    teams-for-linux
 
-
-    
+    # gaming
+    mgba
+    rmg-wayland
   ];
 
 
