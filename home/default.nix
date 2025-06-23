@@ -68,6 +68,9 @@
     # gaming
     mgba
     rmg-wayland
+
+    unetbootin
+    
   ];
 
 
