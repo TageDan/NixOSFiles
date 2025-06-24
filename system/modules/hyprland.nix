@@ -15,6 +15,7 @@
     rofi
     wl-clipboard
     wf-recorder
+    hyprpaper
 
     # applets
     networkmanagerapplet
