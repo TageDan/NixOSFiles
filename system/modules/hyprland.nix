@@ -14,6 +14,7 @@
     waybar
     rofi
     wl-clipboard
+    wf-recorder
 
     # applets
     networkmanagerapplet
