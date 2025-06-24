@@ -9,13 +9,17 @@
 
 
   environment.systemPackages = with pkgs; [
-    alacritty
+    kitty
     brightnessctl
     waybar
     rofi
     wl-clipboard
     wf-recorder
-    hyprpaper
+
+    # swww has animated wallpapers (which is cool)
+    swww
+
+    hyprpicker
 
     # applets
     networkmanagerapplet
