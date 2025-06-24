@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   home.username = "tage";
@@ -70,7 +70,6 @@
     rmg-wayland
 
     unetbootin
-    
   ];
 
 

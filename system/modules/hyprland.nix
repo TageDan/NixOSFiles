@@ -16,8 +16,8 @@
     wl-clipboard
     wf-recorder
 
-    # swww has animated wallpapers (which is cool)
-    swww
+    # mpvpaper supports animated wallpapers (which is cool) swww was slow af
+    mpvpaper
 
     hyprpicker
 
