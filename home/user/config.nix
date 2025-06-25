@@ -7,5 +7,7 @@ in {
     ".config/waybar".source = "${configDir}/waybar";
     ".config/rofi".source = "${configDir}/rofi";
     ".config/swappy".source = "${configDir}/swappy";
+    ".config/swappy".source = "${configDir}/swappy";
+    ".config/eww".source = "${configDir}/eww";
   };
 }

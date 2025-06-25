@@ -1,0 +1,14 @@
+
+(defwindow test
+  :monitor 0
+  :stacking "fg"
+  :windowtype "normal"
+  :wm-ignore true
+  :geometry (geometry
+    :width 10% height 10%
+  ) 
+  (test_layout)
+)
+
+(defwidget test_layout []
+ (label :text "testing eww!"))

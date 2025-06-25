@@ -25,6 +25,8 @@
     networkmanagerapplet
     blueman
 
+    # wacky widgets
+    eww
     
   ];
 }
