@@ -1,14 +1,14 @@
 
-(defwindow test
-  :monitor 0
-  :stacking "fg"
-  :windowtype "normal"
-  :wm-ignore true
-  :geometry (geometry
-    :width 10% height 10%
-  ) 
-  (test_layout)
-)
+; time
+(defpoll time :interval "1s" :initial "time" `date +%H:%M:%S`)
 
-(defwidget test_layout []
- (label :text "testing eww!"))
+; bar - window
+(defwindow mybar
+  :monitor 0
+  :geometry (geometry
+    :x "0%" :y "1%" :width "98%" :height "30px" :anchor "top center")
+  :stacking "fg"
+  :exclusive true
+  :focusable "none"
+  (box :class "bar" :orientation "horizontal" :halign "center" time)
+)

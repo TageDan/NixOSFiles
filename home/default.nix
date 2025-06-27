@@ -70,6 +70,8 @@
     rmg-wayland
 
     unetbootin
+
+    thunderbird
   ];
 
 
