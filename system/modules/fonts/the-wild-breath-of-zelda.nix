@@ -6,7 +6,7 @@ pkgs.stdenv.mkDerivation {
   pname = "the-wild-breath-of-zelda-font";
   version = "1.001";
 
-  src = "./the-wild-breath-of-zelda.zip";
+  src = ./the-wild-breath-of-zelda.zip;
 
   unpackPhase = ''
     runHook preUnpack
@@ -19,7 +19,8 @@ pkgs.stdenv.mkDerivation {
   installPhase = ''
     runHook preInstall
 
-    install -Dm644 the-wild-breath-of-zelda/*.otf -t $out/share/fonts/truetype
+    mkdir -p $out/share/fonts/truetype
+    cp the-wild-breath-of-zelda/*.otf $out/share/fonts/truetype
 
     runHook postInstall 
   '';

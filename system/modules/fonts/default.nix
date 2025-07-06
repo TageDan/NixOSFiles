@@ -1,10 +1,11 @@
 {pkgs, ...}:
 
+let
+ the-wild-breath-of-zelda-font = pkgs.callPackage ./the-wild-breath-of-zelda.nix { inherit pkgs; };
+ hylia-serif =  pkgs.callPackage ./hylia-serif.nix { inherit pkgs; };
+in
 {  
   # fonts.packages = with pkgs; [ noto-fonts ];
-  let
-   the-wild-breath-of-zelda-font = pkgs.callPackage ./the-wild-breath-of-zelda.nix {inherit pkgs};
-  in
    fonts.packages = with pkgs; [                                                                          
     noto-fonts                                                                                           
     noto-fonts-cjk-sans                                                                                       
@@ -14,5 +15,6 @@
     roboto-mono
     font-awesome
     the-wild-breath-of-zelda-font
+    hylia-serif
   ];
 }
