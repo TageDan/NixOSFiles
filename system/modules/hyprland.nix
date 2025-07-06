@@ -16,6 +16,9 @@
     wl-clipboard
     wf-recorder
 
+    # hyprcursor for custom cursor
+    hyprcursor
+
     # mpvpaper supports animated wallpapers (which is cool) swww was slow af
     mpvpaper
 

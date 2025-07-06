@@ -5,7 +5,7 @@
     ./users.nix
     ./helix.nix
     ./zsh.nix
-    ./fonts.nix
+    ./fonts
     ./gaming
     ./bluetooth.nix
   ];
