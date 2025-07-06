@@ -20,7 +20,7 @@ pkgs.stdenv.mkDerivation {
     runHook preInstall
 
     mkdir -p $out/share/fonts/truetype
-    cp hylia-serif/Hylia\ Serif\ Beta\ v0-009 $out/share/fonts/truetype
+    cp hylia-serif/Hylia\ Serif\ Beta\ v0-009/*.otf $out/share/fonts/truetype
 
     runHook postInstall 
   '';
