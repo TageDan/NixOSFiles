@@ -10,7 +10,7 @@
 
   environment.systemPackages = with pkgs; [
     kitty
-    brightnessctl
+
     waybar
     rofi
     wl-clipboard
@@ -30,6 +30,8 @@
 
     # wacky widgets
     eww
+    alsa-utils
+    brightnessctl
     
   ];
 }

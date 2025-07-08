@@ -13,6 +13,8 @@
     tree
     ffmpeg
     htop
+    unzip
+    imagemagick
 
     # cool cli-tools (mostly rust stuff, actually only rust stuff i think) 
     zoxide 
@@ -71,7 +73,10 @@
 
     unetbootin
 
-    thunderbird
+    # cad
+    openscad
+    freecad-wayland
+    
   ];
 
 

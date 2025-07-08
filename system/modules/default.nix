@@ -8,5 +8,6 @@
     ./fonts
     ./gaming
     ./bluetooth.nix
+    ./steam.nix
   ];
 }
