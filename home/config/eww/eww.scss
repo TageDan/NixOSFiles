@@ -1,8 +1,39 @@
 * {
   all: unset;
+  font: 24px Hylia Serif Beta;
 }
 
 .bar {
-  color: #e8ec7e;
-  background-color: #665f3c;
+  background-color: rgba(0,0,0,0.5);
+  border: solid 2px rgba(255,255,255,7);
+  padding: 6px 6px 6px 6px;
 }
+
+.time {
+  color: #98C694;
+}
+
+.volume {
+  padding: 0px 0.5rem;
+  color: #3482BA;
+}
+
+.ocarina {
+  padding: 0px 0px 0px 1rem;
+}
+
+.battery {
+  padding: 0px 0.5rem 0px 1.5rem;
+  color: rgba(200, 50,70,1.0);
+}
+
+.hearts {
+  padding: 0px 0px 0px 0.8rem;
+}
+
+.heart {
+  padding: 0px 1px;
+}
+
+
+

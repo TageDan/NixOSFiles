@@ -1,14 +1,85 @@
 
 ; time
-(defpoll time :interval "1s" :initial "time" `date +%H:%M:%S`)
+(defpoll time_text_1 :interval "1s" :initial "time" `date +"%d/%m"`)
+(defpoll time_text_2 :interval "1s" :initial "time" `date +"%H:%M:%S"`)
+
+(defwidget time []
+  (box
+  :class "time"
+  time_text_1
+  (image :path "~/.config/eww/assets/hourglass.png" :image-height 30 )
+  time_text_2
+  )
+)
+
+
+; battery
+(defpoll battery_text :interval "30s" :initial "battery" `echo $(cat /sys/class/power_supply/BAT1/capacity) % `)
+
+(defpoll battery_lives_level :interval "30s" :initial '[0,0,0]' `~/.config/eww/scripts/heart_levels.py`)
+
+(defvar life_level_image_paths '
+  [
+    "~/.config/eww/assets/heart_empty.png",
+    "~/.config/eww/assets/heart_quarter.png",
+    "~/.config/eww/assets/heart_half.png",
+    "~/.config/eww/assets/heart_three_quarter.png",
+    "~/.config/eww/assets/heart_full.png"
+  ]
+')
+
+(defwidget battery_lives []
+  (box
+  :class "hearts"
+  (for life_level in battery_lives_level
+    (image :class "heart" :path `${life_level_image_paths[life_level]}`)
+  )
+  )
+)
+
+(defwidget battery []
+  (box
+  :orientation "h"
+  :class "battery"
+  :space-evenly false
+  :halign "end"
+  battery_text
+  (battery_lives)
+  )
+)
+
+
+; volume
+(defpoll volume_text :interval "0.1s" :initial "volume" `echo $(amixer get Master | egrep -o '[0-9]{1,3}%' | egrep -o '[0-9]{1,3}' | head -n 1) % `)
+(defwidget volume []
+  (box
+  :orientation "h"
+  :class "volume"
+  :space-evenly false
+  :halign "end"
+  volume_text
+  (image :path "~/.config/eww/assets/ocarina.png" :image-height 28 :class "ocarina")
+  )
+)
+
+; all info
+(defwidget info []
+  (box
+    :orientation "h"
+    :space-evenly false
+    :halign "end"
+    (volume)
+    (battery)
+  )
+)
 
 ; bar - window
 (defwindow mybar
   :monitor 0
   :geometry (geometry
-    :x "0%" :y "1%" :width "98%" :height "30px" :anchor "top center")
+    :x "0%" :y "0" :width "100%" :height "30px" :anchor "top center")
   :stacking "fg"
   :exclusive true
   :focusable "none"
-  (box :class "bar" :orientation "horizontal" :halign "center" time)
+  (centerbox :class "bar" :orientation "horizontal" (box :space-evenly false "Hey! Listen!") (time) (info))
 )

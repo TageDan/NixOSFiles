@@ -15,6 +15,7 @@
     htop
     unzip
     imagemagick
+    file
 
     # cool cli-tools (mostly rust stuff, actually only rust stuff i think) 
     zoxide 
@@ -41,11 +42,15 @@
     texlab
     tectonic
 
+    # markdown
+    glow
+
     # pdf
     zathura
 
     # python
     python3
+    uv # python with uv is like rust with cargo, awesome!
 
     # c/c++
     gcc
@@ -57,7 +62,7 @@
     # network cli tools
     dnsutils # nslookup and dig
     
-    # screenshot cli tools (I like these :D)
+    # screenshot tools (I like these :D)
     grim
     swappy
     slurp
@@ -75,8 +80,10 @@
 
     # cad
     openscad
-    freecad-wayland
-    
+    freecad-wayland    
+
+    # discord
+    discord
   ];
 
 
