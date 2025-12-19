@@ -5,6 +5,6 @@
     isNormalUser = true;
     description = "tage";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" "audio" "dialout" ]; # Dialout for usb reading
+    extraGroups = [ "networkmanager" "wheel" "audio" "dialout" "qemu-libvirtd" "libvirtd" ]; # Dialout for usb reading
   };
 }

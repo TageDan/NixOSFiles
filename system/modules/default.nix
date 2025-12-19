@@ -9,5 +9,6 @@
     ./gaming
     ./bluetooth.nix
     ./steam.nix
+    ./kvm.nix
   ];
 }

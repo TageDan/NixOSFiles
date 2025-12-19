@@ -21,6 +21,7 @@
       "z"
       "eza"
       "ssh-agent"
+      "direnv"
     ];
     theme = "macovsky";
     

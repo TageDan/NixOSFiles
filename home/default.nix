@@ -31,6 +31,10 @@
     fselect # this is nice have always struggled with find and stuff
 
     # development
+     
+    # enviroments
+    direnv
+
     # rust
     cargo
     clippy
@@ -76,14 +80,13 @@
     mgba
     rmg-wayland
 
-    unetbootin
-
     # cad
-    openscad
     freecad-wayland    
 
     # discord
     discord
+
+    
   ];
 
 
