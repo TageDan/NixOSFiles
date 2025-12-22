@@ -1,3 +1,4 @@
+{pkgs, ...}:
 let configDir = ../config;
 in {
   home.file = {
@@ -8,5 +9,6 @@ in {
     ".config/rofi".source = "${configDir}/rofi";
     ".config/swappy".source = "${configDir}/swappy";
     ".config/eww".source = "${configDir}/eww";
+    ".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ";
   };
 }
