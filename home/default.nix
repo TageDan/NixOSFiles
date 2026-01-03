@@ -65,6 +65,9 @@
         
     # network cli tools
     dnsutils # nslookup and dig
+    bettercap # hacking and monitoring
+    nmap
+    netcat
     
     # screenshot tools (I like these :D)
     grim

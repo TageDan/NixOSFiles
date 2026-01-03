@@ -10,5 +10,6 @@
     ./bluetooth.nix
     ./steam.nix
     ./kvm.nix
+    ./avahi.nix
   ];
 }
