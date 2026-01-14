@@ -10,7 +10,7 @@
       "ll" = "eza -l";
       "la" = "eza -a";
       "lla" = "eza -la";
-
+      "nrs" = "sudo nixos-rebuild switch --flake ~/NixOSFiles";
       "cat" = "bat";
     };
 
