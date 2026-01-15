@@ -1,6 +1,7 @@
 [[language]]
 name = "nix"
 language-servers = [ "nil" ]
+auto-format = true
 
 [language-server.nil]
 command = "nil"

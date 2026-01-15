@@ -4,6 +4,9 @@
     ./firefox.nix
     ./config.nix
     ./zsh.nix
+    ./git.nix
+    ./gtk.nix
+    ./qt.nix
   ];
 
   nixpkgs = {
