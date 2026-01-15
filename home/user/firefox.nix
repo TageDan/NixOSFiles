@@ -3,8 +3,17 @@
   programs.firefox = {
     enable = true;
     
-    profiles.tage = {
-      extensions = with inputs.firefox-addons.packages."x86_64-linux"; [ublock-origin sponsorblock darkreader];
+    profiles.default = {
+      extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [ublock-origin sponsorblock darkreader foxyproxy-standard bitwarden];
+      settings = {
+          "extensions.autoDisableScopes" = 0;
+          "extensions.update.autoUpdateDefault" = false;
+          "extensions.update.enabled" = false;
+
+          "sidebar.revamp" = true;
+          "sidebar.revamp.round-content-area" = true;
+          "sidebar.verticalTabs" = true;
+      };
 
       userChrome = ''
         html {

@@ -3,11 +3,10 @@
   description = "My Nixos Laptop Flake";
 
   inputs = {
-    # NixOS official package source, using the nixos-unstable branch here
-    nixpkgs.url = "nixpkgs/nixos-25.05";
+    nixpkgs.url = "nixpkgs/nixos-25.11";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager/release-25.11";
 
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -21,7 +20,6 @@
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
-    # Please replace my-nixos with your hostname
     nixosConfigurations.nixos =
     let pkgs = import nixpkgs { config.allowUnfree = true; system = "x86_64-linux"; };
     in
@@ -34,7 +32,6 @@
         ./system/configuration.nix
 
         home-manager.nixosModules.home-manager {
-          home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
           home-manager.backupFileExtension = "hm-backup";

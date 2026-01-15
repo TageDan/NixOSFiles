@@ -9,8 +9,8 @@
 
   environment.systemPackages = with pkgs; [
 
-    # My terminal emulator is currently kitty. I feel like it's somehow smoother than alacritty (which was what I used before)
-    kitty
+    # rio is rust and pretty smooth
+    rio
 
     # you already know rofi :) (but I may create something custom using eww)
     rofi
@@ -24,8 +24,8 @@
     # hyprcursor for custom cursor
     hyprcursor
 
-    # mpvpaper supports animated wallpapers (which is cool) swww was slow af
-    mpvpaper
+    # simplify wallpapers for me
+    hyprpaper
 
     hyprpicker
 

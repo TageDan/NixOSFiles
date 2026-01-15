@@ -24,7 +24,7 @@
     tokei
     eza
     bat
-    du-dust
+    dust
     hyperfine
     bacon
     spotify-player
