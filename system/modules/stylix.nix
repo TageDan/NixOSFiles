@@ -1,10 +1,10 @@
 {inputs, ...}: {
   
-    imports = [inputs.stylix.homeModules.stylix];
+    imports = [inputs.stylix.nixosModules.stylix];
   stylix = {
     enable = true;
     autoEnable = true;
-    image = ./config/hypr/bg.png;
+    image = ../../home/config/hypr/bg.png;
     polarity = "dark";
   };
 }
