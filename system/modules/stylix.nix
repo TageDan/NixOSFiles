@@ -1,6 +1,7 @@
-{inputs, ...}: {
-  
-    imports = [inputs.stylix.nixosModules.stylix];
+{ inputs, ... }:
+{
+
+  imports = [ inputs.stylix.nixosModules.stylix ];
   stylix = {
     enable = true;
     autoEnable = true;

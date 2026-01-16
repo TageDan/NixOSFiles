@@ -5,6 +5,7 @@
     ./config.nix
     ./zsh.nix
     ./helix.nix
+    ./etc.nix
   ];
 
   nixpkgs = {
