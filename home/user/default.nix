@@ -4,7 +4,6 @@
     ./firefox.nix
     ./config.nix
     ./zsh.nix
-    ./stylix.nix
   ];
 
   nixpkgs = {

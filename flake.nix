@@ -43,17 +43,8 @@
           modules = [
             # Import the previous configuration.nix we used,
             # so the old configuration file still takes effect
-            ./system/configuration.nix
-            inputs.stylix.nixosModules.stylix
-
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.backupFileExtension = "hm-backup";
-
-              home-manager.extraSpecialArgs = { inherit inputs; };
-
-              home-manager.users.tage = import ./home;
-            }
+            ./system
+            ./home
           ];
         };
 

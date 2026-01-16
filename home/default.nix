@@ -1,100 +1,21 @@
+{ pkgs, inputs }:
 {
-  inputs,
-  config,
-  pkgs,
-  ...
-}:
-
-{
-  home.username = "tage";
-  home.homeDirectory = "/home/tage";
-
-  imports = [ ./user ];
-
-  # cool tools
-  home.packages = with pkgs; [
-
-    # cli-tools
-    tree
-    ffmpeg
-    htop
-    unzip
-    imagemagick
-    file
-
-    # cool cli-tools (mostly rust stuff, actually only rust stuff i think)
-    zoxide
-    ripgrep
-    presenterm # this is soooo cool
-    tokei
-    eza
-    bat
-    dust
-    hyperfine
-    bacon
-    spotify-player
-    fselect # this is nice have always struggled with find and stuff
-
-    # development
-
-    # enviroments
-    direnv
-
-    # rust
-    cargo
-    clippy
-    rustc
-    rustfmt
-    rust-analyzer
-
-    # latex
-    texlab
-    tectonic
-
-    # markdown
-    glow
-
-    # pdf
-    zathura
-
-    # python
-    python3
-    uv # python with uv is like rust with cargo, awesome!
-
-    # c/c++
-    gcc
-    gnumake
-
-    # tui programs
-    gitui
-
-    # network cli tools
-    dnsutils # nslookup and dig
-    bettercap # hacking and monitoring
-    nmap
-    netcat
-
-    # screenshot tools (I like these :D)
-    grim
-    swappy
-    slurp
-
-    # gui
-    gimp
-    vlc
-    libresprite
-
-    # gaming
-    mgba
-    rmg-wayland
-
-    # cad
-    freecad-wayland
-
-    # discord
-    discord
-
+  imports = [
+    inputs.stylix.nixosModules.stylix
+    inputs.home-manager.nixosModules.home-manager
   ];
 
-  home.stateVersion = "24.11";
+  stylix = {
+    enable = true;
+    autoEnable = true;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+  };
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    home-manager.backupFileExtension = "hm-backup";
+    user.tage = import ./home.nix;
+  };
+
 }
