@@ -33,13 +33,19 @@
       nixosConfigurations.nixos =
         let
           pkgs = import nixpkgs {
-            config.allowUnfree = true;
-            system = "x86_64-linux";
+            system = "x86_64-linux"; # whatever your system name is
+            config = {
+              allowUnfree = true;
+              allowUnfreePredicate = _: true;
+            };
           };
         in
         nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          specialArgs = { inherit inputs; };
+          specialArgs = {
+            inputs = inputs;
+            pkgs = pkgs;
+          };
           modules = [
             # Import the previous configuration.nix we used,
             # so the old configuration file still takes effect

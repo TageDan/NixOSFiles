@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   programs.zsh = {
@@ -23,7 +23,6 @@
         "ssh-agent"
         "direnv"
       ];
-      theme = "juanghurtado";
 
     };
   };

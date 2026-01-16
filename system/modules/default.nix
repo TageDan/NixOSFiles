@@ -1,5 +1,6 @@
 {...}:
 {
+
   imports = [
     ./hyprland.nix
     ./users.nix
@@ -11,5 +12,6 @@
     ./steam.nix
     ./kvm.nix
     ./avahi.nix
+    ./stylix.nix
   ];
 }

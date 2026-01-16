@@ -1,6 +1,6 @@
 { inputs, ... }:
 {
-  programs.firefox = {
+  programs.librewolf = {
     enable = true;
 
     policies = {
@@ -24,7 +24,7 @@
       };
     };
 
-    profiles.default = {
+    profiles.my-profile = {
       extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
         ublock-origin
         sponsorblock
@@ -41,8 +41,13 @@
         "sidebar.revamp.round-content-area" = true;
         "sidebar.verticalTabs" = true;
         "sidebar.customize.expand_on_hover_enabled" = true;
+        "webgl.disabled" = false;
+        "privacy.resistFingerprinting" = false;
       };
     };
 
   };
+
+  stylix.targets.librewolf.profileNames = [ "my-profile" ];
+
 }

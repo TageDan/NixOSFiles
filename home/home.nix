@@ -1,15 +1,19 @@
 {
+  inputs,
   pkgs,
   ...
 }:
 
 {
+
+  imports = [
+    ./user
+  ];
+
   home = {
 
     username = "tage";
     homeDirectory = "/home/tage";
-
-    imports = [ ./user ];
 
     # cool tools
     packages = with pkgs; [
@@ -97,6 +101,6 @@
     ];
 
     # never change this ( vvvv )
-    home.stateVersion = "24.11";
+    stateVersion = "24.11";
   };
 }
