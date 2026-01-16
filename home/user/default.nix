@@ -4,9 +4,7 @@
     ./firefox.nix
     ./config.nix
     ./zsh.nix
-    ./git.nix
-    ./gtk.nix
-    ./qt.nix
+    ./stylix.nix
   ];
 
   nixpkgs = {
@@ -15,5 +13,5 @@
     };
   };
 
- programs.home-manager.enable = true; 
+  programs.home-manager.enable = true;
 }

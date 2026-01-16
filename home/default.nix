@@ -1,10 +1,15 @@
-{ inputs, config, pkgs, ... }:
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}:
 
 {
   home.username = "tage";
   home.homeDirectory = "/home/tage";
 
-  imports = [./user];
+  imports = [ ./user ];
 
   # cool tools
   home.packages = with pkgs; [
@@ -17,8 +22,8 @@
     imagemagick
     file
 
-    # cool cli-tools (mostly rust stuff, actually only rust stuff i think) 
-    zoxide 
+    # cool cli-tools (mostly rust stuff, actually only rust stuff i think)
+    zoxide
     ripgrep
     presenterm # this is soooo cool
     tokei
@@ -31,7 +36,7 @@
     fselect # this is nice have always struggled with find and stuff
 
     # development
-     
+
     # enviroments
     direnv
 
@@ -62,20 +67,20 @@
 
     # tui programs
     gitui
-        
+
     # network cli tools
     dnsutils # nslookup and dig
     bettercap # hacking and monitoring
     nmap
     netcat
-    
+
     # screenshot tools (I like these :D)
     grim
     swappy
     slurp
 
     # gui
-    gimp 
+    gimp
     vlc
     libresprite
 
@@ -84,17 +89,12 @@
     rmg-wayland
 
     # cad
-    freecad-wayland    
+    freecad-wayland
 
     # discord
     discord
 
-    
   ];
 
-
-  programs.home-manager.enable = true;
-  
   home.stateVersion = "24.11";
 }
-

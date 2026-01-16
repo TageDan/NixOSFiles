@@ -1,4 +1,4 @@
-theme = "amberwood"
+theme = "gruvbox_dark_hard"
 
 [editor.cursor-shape]
   insert = "bar"

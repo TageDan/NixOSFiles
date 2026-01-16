@@ -1,6 +1,6 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
-{ 
+{
   programs.zsh = {
 
     enable = true;
@@ -14,17 +14,17 @@
       "cat" = "bat";
     };
 
-  oh-my-zsh = {
-  enable = true;
-    plugins = [
-      "git"         
-      "z"
-      "eza"
-      "ssh-agent"
-      "direnv"
-    ];
-    theme = "macovsky";
-    
-  };
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+        "git"
+        "z"
+        "eza"
+        "ssh-agent"
+        "direnv"
+      ];
+      theme = "juanghurtado";
+
+    };
   };
 }

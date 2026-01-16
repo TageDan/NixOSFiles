@@ -1,7 +1,7 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
-  
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -9,8 +9,7 @@
 
   environment.systemPackages = with pkgs; [
 
-    # rio is rust and pretty smooth
-    rio
+    foot
 
     # you already know rofi :) (but I may create something custom using eww)
     rofi
@@ -38,6 +37,5 @@
     # wacky widgets
     eww
 
-    
   ];
 }
